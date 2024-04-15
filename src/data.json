@@ -39,11 +39,11 @@
       "subtitle": "Knee joint replacement is a surgery to replace a knee joint with a man-made artificial joint.",
       "image": "/src/assets/s-four-video.jpg",
       "alt": "four section image",
-      "pill": "/src/assets/pill.png",
+      "pill": "/src/assets/section-four-pill.png",
       "pill_alt": "pill image",
       "pill_text1": "3 km",
       "pill_text2": "From Hospital",
-      "band": "/src/assets/band.png",
+      "band": "/src/assets/section-four-band.png",
       "band_alt": "band-aid image",
       "band_text1": "5 km",
       "band_text2": "From Pharmacy"
@@ -55,7 +55,7 @@
       "alt1": "five section image1",
       "title2": "Being healthy will makes you happier.",
       "subtitle2": "joint replacement is a surgery to replace a knee joint with a man-made artificial joint.",
-      "image2": "/src/assets/s-five-s-five-image2.jpg",
+      "image2": "/src/assets/s-five-image2.jpg",
       "alt2": "five section image2"
     },
     "six": {
