@@ -4,12 +4,12 @@ import data from "../../data.json";
 function OneSection() {
   const words = data.sections.three.title.split(" ");
   return (
-    <div>
+    <div className="mt-24 sm:mt-14">
       <div className="flex flex-col-reverse mx-auto items-center gap-4 sm:gap-8 sm:flex-row">
         <img
           src={data.sections.three.image1}
           alt={data.sections.three.alt1}
-          className="mt-3 px-4 sm:px-0 sm:w-[35%] h-auto object-cover object-center mx-auto"
+          className="hidden sm:block mt-3 px-4 sm:px-0 sm:w-[35%] h-auto object-cover object-center mx-auto"
         />
         <div className="flex flex-col gap-2 mt-6 sm:mt-0">
           <div className="text-3xl md:text-4xl lg:text-6xl font-bold px-4 sm:px-0">

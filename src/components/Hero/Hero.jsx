@@ -5,7 +5,7 @@ function Hero() {
   const words = data.sections.one.title.split(" ");
 
   return (
-    <div className="relative" style={{ marginBottom: "15vh" }}>
+    <div className="relative">
       <div className="grid sm:grid-cols-2 gap-2">
         <div className="flex flex-col justify-center items-start text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
           <h2 style={{ lineHeight: "1.2" }}>
@@ -27,9 +27,9 @@ function Hero() {
         </div>
       </div>
       <div
-        className="absolute backdrop-blur-[0.5px] -bottom-[20%] sm:bottom-0 left-0 bg-white bg-opacity-85 w-full h-auto py-4 z-10"
+        className="absolute backdrop-blur-[0.5px] -bottom-1 left-0 bg-white bg-opacity-85 w-full h-auto py-4 z-10"
         style={{
-          boxShadow: "0px 1px 2px 0px rgba(0, 0, 0, 0.1)",
+          boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.1)",
         }}
       >
         <div className="py-4 px-12 grid">

@@ -41,12 +41,12 @@
       "alt": "four section image",
       "pill": "/src/assets/section-four-pill.png",
       "pill_alt": "pill image",
-      "pill_text1": "3 km",
-      "pill_text2": "From Hospital",
+      "pill_text1": "5 km",
+      "pill_text2": "From Pharmacy",
       "band": "/src/assets/section-four-band.png",
       "band_alt": "band-aid image",
-      "band_text1": "5 km",
-      "band_text2": "From Pharmacy"
+      "band_text1": "3 km",
+      "band_text2": "From Hospital"
     },
     "five": {
       "title1": "Health always with a healthy life style.",

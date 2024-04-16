@@ -50,14 +50,11 @@ function Navbar() {
             >
               {data.sections.header.userLogin}
             </a>
-            <a
-              href="#"
-              className="font-semibold text-white bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap"
-            >
+            <button className="font-semibold text-white bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class">
               <p className="font-bold text-[14px] md:text-[16px] lg:text-[18px]">
                 {data.sections.header.userSignUp}
               </p>
-            </a>
+            </button>
           </div>
           <div className="sm:hidden">
             {isMenuOpen ? (
