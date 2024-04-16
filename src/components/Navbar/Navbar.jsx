@@ -14,7 +14,7 @@ function Navbar() {
       <header>
         <nav className="flex justify-between px-8 py-6 sm:p-6 items-center w-full">
           <a href="/">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 pr-4">
               <img
                 height={32}
                 width={32}
@@ -26,7 +26,7 @@ function Navbar() {
               </p>
             </div>
           </a>
-          <ul className="items-center justify-around hidden sm:flex gap-4 md:gap-8 lg:gap-12 ml-4">
+          <ul className="items-center justify-around hidden sm:flex md:gap-2 lg:gap-8 xl:gap-12">
             {data.sections.header.navbar.map((item, index) => (
               <a
                 href="#"
@@ -43,7 +43,7 @@ function Navbar() {
               </a>
             ))}
           </ul>
-          <div className="items-center text-lg hidden sm:flex gap-6 min-w-max-content whitespace-nowrap ">
+          <div className="items-center text-lg hidden sm:flex gap-6 min-w-max-content px-4">
             <a
               href="#"
               className="font-bold text-gray_default text-[14px] md:text-[16px] lg:text-[18px]"
@@ -52,7 +52,7 @@ function Navbar() {
             </a>
             <a
               href="#"
-              className="font-semibold text-white bg-primary py-3 px-9 cursor-pointer"
+              className="font-semibold text-white bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap"
             >
               <p className="font-bold text-[14px] md:text-[16px] lg:text-[18px]">
                 {data.sections.header.userSignUp}

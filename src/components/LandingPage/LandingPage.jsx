@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Hero from "../Hero/Hero";
+import Layout from "../Layout/Layout";
 
 function LandingPage() {
   return (
     <div>
       {/* Header Section */}
       <Navbar />
-
+      <Layout>
+        <Hero />
+      </Layout>
       {/* Section One
       <div>
         <h2>{data.sections.one.title}</h2>
