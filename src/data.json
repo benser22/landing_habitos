@@ -68,7 +68,8 @@
       "title": "Subscribe Newsletter",
       "subtitle": "Health always begins with a healthy life style",
       "input_placeholder": "Enter your email",
-      "button": "Get Start"
+      "button": "Get Start",
+      "error": "Please enter a valid email address."
     },
     "footer": {
       "logo": "/src/assets/logo.png",
