@@ -63,7 +63,7 @@ function Navbar() {
                   onClick={handleMenuOpen}
                   className="text-primary w-8 h-8 cursor-pointer"
                 />
-                <div className="absolute z-40 right-0 bg-black bg-opacity-80 px-6 rounded-md">
+                <div className="absolute z-40 right-0 bg-gray_light bg-opacity-90 px-6 rounded-sm shadow-xl">
                   <ul className="">
                     {data.sections.header.navbar.map((item, index) => (
                       <a

@@ -4,7 +4,7 @@ import data from "../../data.json";
 function OneSection() {
   const words = data.sections.three.title.split(" ");
   return (
-    <div className="mt-24 sm:mt-14">
+    <div className="mt-0 sm:mt-14">
       <div className="flex flex-col-reverse mx-auto items-center gap-4 sm:gap-8 sm:flex-row">
         <img
           src={data.sections.three.image1}

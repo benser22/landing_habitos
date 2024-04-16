@@ -16,3 +16,8 @@ button:active {
   filter: saturate(0.8);
   transition: filter 1s;
 }
+
+.text-2_5_xl {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}

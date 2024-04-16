@@ -2,6 +2,7 @@ import React from "react";
 import OneSection from "../Sections/OneSection";
 import TwoSection from "../Sections/TwoSection";
 import ThreeSection from "../Sections/ThreeSection";
+import FourSection from "../Sections/FourSection";
 
 function Body() {
   return (
@@ -9,6 +10,7 @@ function Body() {
       <OneSection />
       <TwoSection />
       <ThreeSection />
+      <FourSection />
     </div>
   );
 }

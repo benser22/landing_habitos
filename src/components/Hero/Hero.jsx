@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="relative">
       <div className="grid sm:grid-cols-2 gap-2">
-        <div className="opacity-0 sm:opacity-100  flex flex-col justify-center items-start text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
+        <div className="flex flex-col justify-center items-start text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
           <h2 style={{ lineHeight: "1.2" }}>
             {words.map((word, index) => (
               <span
@@ -21,13 +21,16 @@ function Hero() {
             ))}
           </h2>
           <h2 className="text-[#F2F2F2] sm:mb-60">\\ Emergency</h2>
+          <div className="block sm:hidden">
+            <img src={data.sections.one.image} alt={data.sections.one.alt} />
+          </div>
         </div>
-        <div>
+        <div className="hidden sm:block">
           <img src={data.sections.one.image} alt={data.sections.one.alt} />
         </div>
       </div>
       <div
-        className="absolute backdrop-blur-[0.5px] -bottom-1 left-0 bg-white bg-opacity-85 w-full h-auto py-4 z-10"
+        className="sm:absolute backdrop-blur-[0.5px] top-0 sm:top-[50%] md:top-[70%] left-0 bg-white bg-opacity-85 w-full h-auto py-4 z-10"
         style={{
           boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.1)",
         }}
