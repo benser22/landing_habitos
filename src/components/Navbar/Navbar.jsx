@@ -66,7 +66,7 @@ function Navbar() {
                   onClick={handleMenuOpen}
                   className="text-primary w-8 h-8"
                 />
-                <div className="absolute z-40 right-0 bg-black bg-opacity-10 px-6 rounded-md">
+                <div className="absolute z-40 right-0 bg-black bg-opacity-80 px-6 rounded-md">
                   <ul className="">
                     {data.sections.header.navbar.map((item, index) => (
                       <a
@@ -75,16 +75,16 @@ function Navbar() {
                         className="min-w-max-content whitespace-nowrap"
                       >
                         <li
-                          className={`font-bold text-gray_default text-[14px] my-4 hover:text-primary active:text-gray_dark`}
+                          className={`font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark`}
                         >
                           {item}
                         </li>
                       </a>
                     ))}
-                    <li className="font-bold text-gray_default text-[14px] my-4 hover:text-primary active:text-gray_dark">
+                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark">
                       {data.sections.header.userLogin}
                     </li>
-                    <li className="font-bold text-gray_default text-[14px] my-4 hover:text-primary active:text-gray_dark">
+                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark">
                       <div>{data.sections.header.userSignUp}</div>
                     </li>
                   </ul>

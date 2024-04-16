@@ -27,22 +27,21 @@ function Hero() {
         </div>
       </div>
       <div
-        className="absolute bottom-0 left-0 bg-white bg-opacity-90 w-full h-[30%] z-10"
+        className="absolute backdrop-blur-[0.5px] -bottom-[20%] sm:-bottom-1 left-0 bg-white bg-opacity-85 w-full h-auto py-4 z-10"
         style={{
-          boxShadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.2)",
+          boxShadow: "0px 1px 2px 0px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <div className="py-5 px-12 grid">
-          <p className="text-2xl font-[500] tracking-normal">
+        <div className="py-4 px-12 grid">
+          <p className="text-2xl font-[500] mb-3 tracking-normal">
             {data.sections.two.title}
           </p>
-          <div className="flex border-s-[#DDDDDD]">
+          <div className="flex flex-col sm:flex-row border-s-[#DDDDDD]">
             {Object.entries(data.sections.two.filtersbar).map(
               ([filterTitle, options]) => (
                 <select
                   key={filterTitle}
-                  className="border border-gray_light text-gray_default px-6 py-3.5 w-[18%] cursor-pointer"
-                  style={{ appearance: "auto" }}
+                  className={`border border-gray_light text-gray_default px-6 py-3.5 w-full sm:w-[18%] cursor-pointer`}
                 >
                   {options.map((option, index) => (
                     <option key={index} value={option}>
@@ -52,7 +51,7 @@ function Hero() {
                 </select>
               )
             )}
-            <button className="bg-primary ml-4 w-1/5 text-white">
+            <button className="bg-primary sm:ml-4 mt-2 sm:mt-0 w-full sm:w-1/5 py-3 text-white">
               {data.sections.two.button}
             </button>
           </div>
