@@ -32,7 +32,7 @@ function FiveSection() {
       <p className="text-xs sm:text-md md:text-xl lg:text-2xl text-gray_light">
         {data.sections.seven.subtitle}
       </p>
-      <div className="flex items-center mt-4 sm:mt-12 gap-4">
+      <div className="flex flex-col sm:flex-row items-center mt-4 sm:mt-12 gap-2 sm:gap-4 ">
         <input
           type="email"
           value={email}
