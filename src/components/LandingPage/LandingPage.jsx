@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
 import Layout from "../Layout/Layout";
+import Body from "../Body/Body";
 
 function LandingPage() {
   return (
@@ -10,6 +11,7 @@ function LandingPage() {
       <Navbar />
       <Layout>
         <Hero />
+        <Body />
       </Layout>
       {/* Section One
       <div>

@@ -64,7 +64,7 @@ function Navbar() {
               <div className="relative">
                 <HiX
                   onClick={handleMenuOpen}
-                  className="text-primary w-8 h-8"
+                  className="text-primary w-8 h-8 cursor-pointer"
                 />
                 <div className="absolute z-40 right-0 bg-black bg-opacity-80 px-6 rounded-md">
                   <ul className="">
@@ -81,10 +81,10 @@ function Navbar() {
                         </li>
                       </a>
                     ))}
-                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark">
+                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark cursor-pointer">
                       {data.sections.header.userLogin}
                     </li>
-                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark">
+                    <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark cursor-pointer">
                       <div>{data.sections.header.userSignUp}</div>
                     </li>
                   </ul>
@@ -93,7 +93,7 @@ function Navbar() {
             ) : (
               <HiMenu
                 onClick={handleMenuOpen}
-                className="text-primary w-8 h-8"
+                className="text-primary w-8 h-8 cursor-pointer"
               />
             )}
           </div>
