@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="relative">
       <div className="grid sm:grid-cols-2 gap-2">
-        <div className="flex flex-col justify-center items-start text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
+        <div className="opacity-0 sm:opacity-100  flex flex-col justify-center items-start text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
           <h2 style={{ lineHeight: "1.2" }}>
             {words.map((word, index) => (
               <span
