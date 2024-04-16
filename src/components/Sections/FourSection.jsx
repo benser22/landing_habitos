@@ -1,7 +1,42 @@
 import React from "react";
 import data from "../../data.json";
+import bg from "../../assets/section-six-bg.png";
 
 function FourSection() {
-  return <div className="flex justify-center p-8 bg-gray-500">Sección 4</div>;
+  return (
+    <div
+      className="w-full h-full p-8 py-32"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="sm:grid sm:grid-cols-2 gap-6">
+        <p className="text-white col-span-2 text-2xl w-full lg:w-1/2 py-6">
+          {data.sections.six.title}
+        </p>
+        <div className="flex items-center sm:items-end gap-6 sm:gap-3 py-6 justify-center">
+          <p className="text-white text-7xl">01.</p>
+          <div className="flex flex-col gap-4">
+            <p className="text-white text-xl">{data.sections.six.subtitle1}</p>
+            <p className="text-white text-md">
+              {data.sections.six.description}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center sm:items-end gap-3 py-6 justify-center">
+          <p className="text-white text-7xl">02.</p>
+          <div className="flex flex-col gap-4">
+            <p className="text-white text-xl">{data.sections.six.subtitle2}</p>
+            <p className="text-white text-md">
+              {data.sections.six.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
+
 export default FourSection;
