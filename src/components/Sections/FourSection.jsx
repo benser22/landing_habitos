@@ -5,7 +5,7 @@ import bg from "../../assets/section-six-bg.png";
 function FourSection() {
   return (
     <div
-      className="w-full h-full p-8 py-32"
+      className="w-full h-full p-8 py-20 sm:py-32"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
