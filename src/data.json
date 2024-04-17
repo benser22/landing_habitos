@@ -77,24 +77,32 @@
       "text_logo": "medica",
       "paragraph": "joint replacement is a surgery to replace a knee joint with a man made artificial joint. a knee joint with a man-made artificial joint.",
       "links": {
-        "Company": [
-          "About Us",
-          "Pricing",
-          "Hospital List",
-          "Doctor",
-          "Terms of Use"
-        ],
-        "Support": ["Support Center", "24x7 Service", "Quick Chat"],
-        "Contact": [
-          "+1826535375535",
-          "+1843228662422",
-          "call@medicahealth.com"
-        ],
+        "Company": {
+          "name": "Company",
+          "data": [
+            "About Us",
+            "Pricing",
+            "Hospital List",
+            "Doctor",
+            "Terms of Use"
+          ]
+        },
+        "Support": {
+          "name": "Support",
+          "data": ["Support Center", "24x7 Service", "Quick Chat"]
+        },
+        "Contact": {
+          "name": "Contact",
+          "data": ["+1826535375535", "+1843228662422", "call@medicahealth.com"]
+        },
         "facebook-icon": "/src/assets/footer-facebook-icon.png",
         "twitter-icon": "/src/assets/footer-twitter-icon.png",
         "linkedin-icon": "/src/assets/footer-linkedin-icon.png",
-        "copy": "Copy right @2022 medica",
-        "designBy": "Design by Sourav Aich"
+        "social-media-alt": "social media image",
+        "copy": "Copy right @2022",
+        "copy-name": "medica",
+        "designBy": "Design by",
+        "designBy-mame": "Sourav Aich"
       }
     }
   }
