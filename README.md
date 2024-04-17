@@ -8,26 +8,27 @@ El archivo JSON define la estructura de las secciones del proyecto y cómo se re
 
 ### Secciones:
 
-- **Header**: Renderizado por Navbar.
+- **Header**:
+
+  - "section-header": Renderizado por Navbar.
+
 - **Body**:
-  - "one" y "two": Renderizados por Hero.
-  - "three": Renderizado por OneSection.
-  - "four": Renderizado por TwoSection.
-  - "five": Renderizado por ThreeSection.
-  - "six": Renderizado por FourSection.
-  - "seven": Renderizado por FiveSection.
-- **Footer**: Renderizado por Footer.
+
+  - "section-one" y "section-two": Renderizados por Hero.
+  - "section-three": Renderizado por OneSection.
+  - "section-four": Renderizado por TwoSection.
+  - "section-five": Renderizado por ThreeSection.
+  - "section-six": Renderizado por FourSection.
+  - "section-seven": Renderizado por FiveSection.
+
+- **Footer**:
+
+  - "section-footer": Renderizado por Footer.
 
 ## Estilos y Renderizado
 
 Cada sección del archivo JSON corresponde a una parte específica de la interfaz de usuario. Aquí hay un resumen de cómo se relacionan las secciones con el estilo y el renderizado:
 
 - **Header**: La barra de navegación proporciona la cabecera del sitio.
-- **Body**:
-  - "one" y "two": Hero se encarga de renderizar la primera sección destacada del cuerpo.
-  - "three": OneSection se encarga de renderizar una sección específica del cuerpo.
-  - "four": TwoSection se encarga de renderizar otra sección específica del cuerpo.
-  - "five": ThreeSection se encarga de renderizar una tercera sección específica del cuerpo.
-  - "six": FourSection se encarga de renderizar una cuarta sección específica del cuerpo.
-  - "seven": FiveSection se encarga de renderizar una quinta sección específica del cuerpo.
+- **Body**: Es el cuerpo del sitio donde se muestra el contenido principal.
 - **Footer**: El pie de página finaliza la interfaz de usuario.
