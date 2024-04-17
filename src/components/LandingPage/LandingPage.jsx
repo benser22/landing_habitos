@@ -11,7 +11,6 @@ function LoadingSpinner() {
     <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-75 z-50">
       <div className="text-white">
         <HiOutlineRefresh className="animate-spin h-8 w-8 mr-2" />
-        Loading...
       </div>
     </div>
   );
