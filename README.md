@@ -10,7 +10,7 @@ El archivo JSON define la estructura de las secciones del proyecto y cómo se re
 
 - **Header** 🖋️:
 
-  - "section-header": Consumido por Navbar.
+  - **"section-header"**: Consumido por Navbar.
 
 - **Body** 💼:
 
@@ -23,7 +23,7 @@ El archivo JSON define la estructura de las secciones del proyecto y cómo se re
 
 - **Footer** 🦶:
 
-  - "section-footer": Consumido por Footer.
+  - **"section-footer"**: Consumido por Footer.
 
 ## Estilos y Renderizado
 
