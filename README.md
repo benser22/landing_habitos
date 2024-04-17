@@ -24,7 +24,7 @@ Cada sección del archivo JSON corresponde a una parte específica de la interfa
 
 - **Header**: La barra de navegación proporciona la cabecera del sitio.
 - **Body**:
-  - "one" y "two": Hero se encarga de renderizar las primeras secciones destacadas del cuerpo.
+  - "one" y "two": Hero se encarga de renderizar la primera sección destacada del cuerpo.
   - "three": OneSection se encarga de renderizar una sección específica del cuerpo.
   - "four": TwoSection se encarga de renderizar otra sección específica del cuerpo.
   - "five": ThreeSection se encarga de renderizar una tercera sección específica del cuerpo.
