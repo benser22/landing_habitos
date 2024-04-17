@@ -33,11 +33,7 @@ function Navbar() {
                 key={index}
                 className="min-w-max-content whitespace-nowrap ml-6"
               >
-                <li
-                  className={`font-bold text-${
-                    item === "About Us" ? "primary" : "gray_default"
-                  } text-[14px] md:text-[16px] lg:text-[18px]`}
-                >
+                <li className="font-bold text-gray_default hover:text-primary active:text-primary">
                   {item}
                 </li>
               </a>
