@@ -2,7 +2,7 @@ import React from "react";
 import data from "../../data.json";
 
 function Hero() {
-  const words = data.sections.one.title.split(" ");
+  const words = data["section-one"].title.split(" ");
 
   return (
     <div className="relative">
@@ -22,15 +22,15 @@ function Hero() {
           </h2>
           <h2 className="text-[#F2F2F2] sm:mb-60">\\ Emergency</h2>
           <img
-            src={data.sections.one.image}
-            alt={data.sections.one.alt}
+            src={data["section-one"].image}
+            alt={data["section-one"].alt}
             width="100%"
             height="auto"
             className="block sm:hidden"
           />
         </div>
         <div className="hidden sm:block">
-          <img src={data.sections.one.image} alt={data.sections.one.alt} />
+          <img src={data["section-one"].image} alt={data["section-one"].alt} />
         </div>
       </div>
       <div
@@ -41,10 +41,10 @@ function Hero() {
       >
         <div className="py-4 px-12 grid">
           <p className="text-2xl font-[500] mb-3 tracking-normal">
-            {data.sections.two.title}
+            {data["section-two"].title}
           </p>
           <div className="flex flex-col sm:flex-row border-s-[#DDDDDD]">
-            {Object.entries(data.sections.two.filtersbar).map(
+            {Object.entries(data["section-two"].filtersbar).map(
               ([filterTitle, options]) => (
                 <select
                   key={filterTitle}
@@ -59,7 +59,7 @@ function Hero() {
               )
             )}
             <button className="bg-primary sm:ml-4 mt-2 sm:mt-0 w-full sm:w-1/5 py-3 text-white">
-              {data.sections.two.button}
+              {data["section-two"].button}
             </button>
           </div>
         </div>

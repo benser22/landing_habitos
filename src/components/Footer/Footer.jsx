@@ -12,50 +12,52 @@ function Footer() {
               <img
                 height={32}
                 width={32}
-                src={data.sections.header.logo}
-                alt={data.sections.header.alt}
+                src={data["section-header"].logo}
+                alt={data["section-header"].alt}
               />
               <p className="text-primary font-normal text-[20px] mb-1 lg:text-[28px]">
-                {data.sections.header.text_logo}
+                {data["section-header"].text_logo}
               </p>
             </div>
           </a>
-          <p className="text-base">{data.sections.footer.paragraph}</p>
+          <p className="text-base">{data["section-footer"].paragraph}</p>
           <div className="flex items-center gap-4 sm:mb-24">
             <img
               height={32}
               width={31}
               className="bg-white p-1 cursor-pointer rounded-md"
-              src={data.sections.footer.links["facebook-icon"]}
-              alt={data.sections.footer.links["social-media-alt"]}
+              src={data["section-footer"].links["facebook-icon"]}
+              alt={data["section-footer"].links["social-media-alt"]}
             />
             <img
               height={32}
               width={31}
               className="bg-white p-1 cursor-pointer rounded-md"
-              src={data.sections.footer.links["twitter-icon"]}
-              alt={data.sections.footer.links["social-media-alt"]}
+              src={data["section-footer"].links["twitter-icon"]}
+              alt={data["section-footer"].links["social-media-alt"]}
             />
             <img
               height={32}
               width={31}
               className="bg-white p-1 cursor-pointer rounded-md"
-              src={data.sections.footer.links["linkedin-icon"]}
-              alt={data.sections.footer.links["social-media-alt"]}
+              src={data["section-footer"].links["linkedin-icon"]}
+              alt={data["section-footer"].links["social-media-alt"]}
             />
           </div>
           <div className="absolute hidden sm:flex items-center gap-1 text-[12px] bottom-0">
-            <p className="text-gray_light">{data.sections.footer.links.copy}</p>
-            <p>{data.sections.footer.links["copy-name"]}</p>
+            <p className="text-gray_light">
+              {data["section-footer"].links.copy}
+            </p>
+            <p>{data["section-footer"].links["copy-name"]}</p>
           </div>
         </div>
         {/* Columna 2 */}
         <div className="col-span-1">
           <h2 className="text-lg font-bold mb-6">
-            {data.sections.footer.links.Company.name}
+            {data["section-footer"].links.Company.name}
           </h2>
           <div className="mt-2">
-            {data.sections.footer.links.Company.data.map((item, index) => (
+            {data["section-footer"].links.Company.data.map((item, index) => (
               <a key={index}>
                 <p className="sm:text-base text-sm cursor-pointer mt-1 sm:mt-3 tracking-normal hover:text-primary">
                   {item}
@@ -67,10 +69,10 @@ function Footer() {
         {/* Columna 3 */}
         <div className="col-span-1">
           <h2 className="text-lg font-bold mb-6">
-            {data.sections.footer.links.Support.name}
+            {data["section-footer"].links.Support.name}
           </h2>
           <div className="mt-2">
-            {data.sections.footer.links.Support.data.map((item, index) => (
+            {data["section-footer"].links.Support.data.map((item, index) => (
               <a key={index}>
                 <p className="sm:text-base text-sm cursor-pointer mt-1 sm:mt-3 tracking-normal hover:text-primary">
                   {item}
@@ -82,10 +84,10 @@ function Footer() {
         {/* Columna 4 */}
         <div className="col-span-1 relative">
           <h2 className="text-lg font-bold mb-6">
-            {data.sections.footer.links.Contact.name}
+            {data["section-footer"].links.Contact.name}
           </h2>
           <div className="mt-2">
-            {data.sections.footer.links.Contact.data.map((item, index) => (
+            {data["section-footer"].links.Contact.data.map((item, index) => (
               <a key={index}>
                 <p className="sm:text-base text-sm truncate cursor-pointer mt-1 sm:mt-3 tracking-normal hover:text-primary">
                   {item}
@@ -98,9 +100,9 @@ function Footer() {
             style={{ minWidth: "max-content" }}
           >
             <p className="text-gray_light">
-              {data.sections.footer.links.designBy}
+              {data["section-footer"].links.designBy}
             </p>
-            <p>{data.sections.footer.links["designBy-mame"]}</p>
+            <p>{data["section-footer"].links["designBy-mame"]}</p>
           </div>
         </div>
         {/* Fin de las columnas */}
