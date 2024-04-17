@@ -21,6 +21,8 @@ function TwoSection() {
       <img
         src={data.sections.four.image}
         alt={data.sections.four.alt}
+        width="100%"
+        height="auto"
         className="mx-auto relative z-10"
       />
       <div className="absolute grid grid-cols-2 z-50 bottom-[2%] md:bottom-[5%] lg:bottom-[10%] gap-10 px-6 lg:px-0 lg:pl-14">
@@ -34,11 +36,12 @@ function TwoSection() {
           <div className="hidden sm:flex items-center justify-start gap-12 pr-24 mt-1 text-xs md:text-base">
             <div className="flex items-center">
               <img
-                height={36}
-                width={36}
                 src={data.sections.four.band}
                 alt={data.sections.four.band_alt}
-              ></img>
+                width={36}
+                height={36}
+                className="h-9 w-9"
+              />
               <div className="text-white flex flex-col sm:-space-y-1 ml-4">
                 <p className="font-semibold">{data.sections.four.band_text1}</p>
                 <p className="tracking-wider" style={{ lineHeight: "1" }}>
@@ -48,11 +51,12 @@ function TwoSection() {
             </div>
             <div className="flex items-center">
               <img
-                height={36}
-                width={36}
                 src={data.sections.four.pill}
                 alt={data.sections.four.pill_alt}
-              ></img>
+                width={36}
+                height={36}
+                className="h-9 w-9"
+              />
               <div className="text-white flex flex-col sm:-space-y-1 ml-4">
                 <p className="font-semibold">{data.sections.four.pill_text1}</p>
                 <p className="tracking-wider" style={{ lineHeight: "1" }}>

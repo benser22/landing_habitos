@@ -9,7 +9,9 @@ function OneSection() {
         <img
           src={data.sections.three.image1}
           alt={data.sections.three.alt1}
-          className="hidden sm:block mt-3 px-4 sm:px-0 sm:w-[35%] h-auto object-cover object-center mx-auto"
+          width="35%"
+          height="auto"
+          className="hidden sm:block mt-3 px-4 sm:px-0 mx-auto"
         />
         <div className="flex flex-col gap-2 mt-6 sm:mt-0">
           <div className="text-3xl md:text-4xl lg:text-6xl font-bold px-4 sm:px-0">

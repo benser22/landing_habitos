@@ -33,7 +33,9 @@ function ThreeSection() {
         <img
           src={data.sections.five.image2}
           alt={data.sections.five.alt2}
-          className="w-full h-full object-cover pl-8"
+          width="100%"
+          height="auto"
+          className="object-cover pl-8"
         />
       </div>
     </div>

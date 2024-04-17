@@ -37,13 +37,7 @@ function FiveSection() {
           type="email"
           value={email}
           onChange={handleEmailChange}
-          className={`bg-[#F4F4F4] text-black p-3 px-5 border-solid border ${
-            isValidEmail
-              ? "border-[#CFCFCF]"
-              : email
-              ? "border-red-500"
-              : "border-[#CFCFCF]"
-          } placeholder-black`}
+          className="bg-[#F4F4F4] text-black p-3 px-5 border-solid border border-[#CFCFCF] placeholder-black"
           placeholder={data.sections.seven.input_placeholder}
         />
         <button

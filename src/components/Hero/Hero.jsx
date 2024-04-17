@@ -21,9 +21,13 @@ function Hero() {
             ))}
           </h2>
           <h2 className="text-[#F2F2F2] sm:mb-60">\\ Emergency</h2>
-          <div className="block sm:hidden">
-            <img src={data.sections.one.image} alt={data.sections.one.alt} />
-          </div>
+          <img
+            src={data.sections.one.image}
+            alt={data.sections.one.alt}
+            width="100%"
+            height="auto"
+            className="block sm:hidden"
+          />
         </div>
         <div className="hidden sm:block">
           <img src={data.sections.one.image} alt={data.sections.one.alt} />
