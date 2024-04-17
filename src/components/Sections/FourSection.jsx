@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../data.json";
-import bg from "../../assets/section-six-bg.png";
+import bg from "/section-six-bg.webp";
 
 function FourSection() {
   return (
