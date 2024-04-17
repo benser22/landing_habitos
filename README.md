@@ -1,18 +1,18 @@
-# Documentación del Proyecto
+# Documentación del Proyecto 📝
 
 Este README proporciona una descripción general de la estructura del archivo JSON y cómo se relaciona con la representación visual del proyecto.
 
-## Archivo JSON
+## Archivo JSON 📄
 
-El archivo JSON define la estructura de las secciones del proyecto y cómo se renderizan en la interfaz de usuario.
+El archivo JSON define la estructura de las secciones del proyecto y cómo se renderizan en la interfaz de usuario. Puedes encontrarlo [aquí](https://github.com/benser22/landing_habitos/blob/main/src/data.json).
 
 ### Secciones:
 
-- **Header**:
+- **Header** 🖋️:
 
   - "section-header": Renderizado por Navbar.
 
-- **Body**:
+- **Body** 💼:
 
   - "section-one" y "section-two": Renderizados por Hero.
   - "section-three": Renderizado por OneSection.
@@ -21,7 +21,7 @@ El archivo JSON define la estructura de las secciones del proyecto y cómo se re
   - "section-six": Renderizado por FourSection.
   - "section-seven": Renderizado por FiveSection.
 
-- **Footer**:
+- **Footer** 🦶:
 
   - "section-footer": Renderizado por Footer.
 
