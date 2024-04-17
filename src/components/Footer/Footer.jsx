@@ -3,7 +3,7 @@ import data from "../../data.json";
 
 function Footer() {
   return (
-    <footer className="flex justify-center pt-10 sm:pt-20 pb-6 px-6 bg-[#F1F8FF] mt-4 overflow-hidden">
+    <footer className="flex justify-center pt-10 sm:pt-20 pb-6 pr-6 pl-10 sm:px-16 bg-[#F1F8FF] mt-4 overflow-hidden">
       <div className="container mx-auto grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-12 text-black">
         {/* Columna 1 */}
         <div className="relative flex flex-col col-span-5 justify-between gap-8 sm:col-span-2 pr-6 mb-10 sm:mb-0">

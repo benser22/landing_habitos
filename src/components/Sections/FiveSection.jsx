@@ -17,7 +17,7 @@ function FiveSection() {
   };
 
   const handleButtonClick = () => {
-    if (isValidEmail) {
+    if (isValidEmail && email) {
       window.location.href = `mailto:${email}`;
     } else {
       alert(data.sections.seven.error);
