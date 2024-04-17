@@ -18,16 +18,16 @@ function Navbar() {
               <img
                 height={32}
                 width={32}
-                src={data.sections.header.logo}
-                alt={data.sections.header.alt}
+                src={data["section-header"].logo}
+                alt={data["section-header"].alt}
               />
               <p className="text-primary font-normal text-[24px] mb-1 lg:text-[28px]">
-                {data.sections.header.text_logo}
+                {data["section-header"].text_logo}
               </p>
             </div>
           </a>
           <ul className="items-center justify-around hidden sm:flex md:gap-2 lg:gap-8 xl:gap-12">
-            {data.sections.header.navbar.map((item, index) => (
+            {data["section-header"].navbar.map((item, index) => (
               <a
                 href="#"
                 key={index}
@@ -44,11 +44,11 @@ function Navbar() {
               href="#"
               className="font-bold text-gray_default text-[14px] md:text-[16px] lg:text-[18px]"
             >
-              {data.sections.header.userLogin}
+              {data["section-header"].userLogin}
             </a>
             <button className="font-semibold text-white bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class">
               <p className="font-bold text-[14px] md:text-[16px] lg:text-[18px]">
-                {data.sections.header.userSignUp}
+                {data["section-header"].userSignUp}
               </p>
             </button>
           </div>
@@ -61,7 +61,7 @@ function Navbar() {
                 />
                 <div className="absolute z-40 right-0 bg-gray_light bg-opacity-90 px-6 rounded-sm shadow-xl">
                   <ul className="">
-                    {data.sections.header.navbar.map((item, index) => (
+                    {data["section-header"].navbar.map((item, index) => (
                       <a
                         href="#"
                         key={index}
@@ -75,10 +75,10 @@ function Navbar() {
                       </a>
                     ))}
                     <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark cursor-pointer">
-                      {data.sections.header.userLogin}
+                      {data["section-header"].userLogin}
                     </li>
                     <li className="font-bold text-white text-[14px] my-4 hover:text-primary active:text-gray_dark cursor-pointer">
-                      <div>{data.sections.header.userSignUp}</div>
+                      <div>{data["section-header"].userSignUp}</div>
                     </li>
                   </ul>
                 </div>
