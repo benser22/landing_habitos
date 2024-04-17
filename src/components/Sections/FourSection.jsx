@@ -1,13 +1,12 @@
 import React from "react";
 import data from "../../data.json";
-import bg from "../../assets/section-six-bg.png";
 
 function FourSection() {
   return (
     <div
       className="w-full h-full p-8 py-20 sm:py-32"
       style={{
-        backgroundImage: `url(${bg})`,
+        backgroundImage: `url(${data.sections.backgrounds[1]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
