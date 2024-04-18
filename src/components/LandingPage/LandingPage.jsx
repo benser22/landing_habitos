@@ -22,7 +22,9 @@ function LandingPage() {
     <div>
       <Navbar />
       <Layout>
-        <Hero />
+        <section id="whyus?">
+          <Hero />
+        </section>
         <Suspense fallback={<LoadingSpinner />}>
           <LazyBody />
         </Suspense>

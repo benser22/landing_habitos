@@ -1,3 +1,4 @@
+// Body.js
 import React from "react";
 import OneSection from "../Sections/OneSection";
 import TwoSection from "../Sections/TwoSection";
@@ -8,11 +9,21 @@ import FiveSection from "../Sections/FiveSection";
 function Body() {
   return (
     <div>
-      <OneSection />
-      <TwoSection />
-      <ThreeSection />
-      <FourSection />
-      <FiveSection />
+      <section id="aboutus">
+        <OneSection />
+      </section>
+      <section id="overview">
+        <TwoSection />
+      </section>
+      <section id="doctor's">
+        <ThreeSection />
+      </section>
+      <section id="lifestyle">
+        <FourSection />
+      </section>
+      <section id="suscribe">
+        <FiveSection />
+      </section>
     </div>
   );
 }
