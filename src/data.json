@@ -1,6 +1,6 @@
 {
   "section-header": {
-    "navbar": ["About Us", "Pricing", "Hospital List", "Doctor"],
+    "navbar": ["Why us?", "Overview", "Doctor's", "Lifestyle", "Suscribe"],
     "userLogin": "Login",
     "userSignUp": "Sign Up",
     "logo": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/klluylnchnnlvp3cpq90.png",
