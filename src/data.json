@@ -78,13 +78,7 @@
     "links": {
       "Company": {
         "name": "Company",
-        "data": [
-          "About Us",
-          "Pricing",
-          "Hospital List",
-          "Doctor",
-          "Terms of Use"
-        ]
+        "data": ["Why us?", "Overview", "Doctor's", "Lifestyle", "Suscribe"]
       },
       "Support": {
         "name": "Support",
