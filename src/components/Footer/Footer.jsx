@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data.json";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
@@ -59,9 +60,17 @@ function Footer() {
           <div className="mt-2">
             {data["section-footer"].links.Company.data.map((item, index) => (
               <a key={index}>
-                <p className="sm:text-base text-sm cursor-pointer mt-1 sm:mt-3 tracking-normal hover:text-primary">
-                  {item}
-                </p>
+                <Link
+                  to={item.toLowerCase().replace(/\s+/g, "")}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                >
+                  <p className="sm:text-base text-sm cursor-pointer mt-1 sm:mt-3 tracking-normal hover:text-primary">
+                    {item}
+                  </p>
+                </Link>
               </a>
             ))}
           </div>
