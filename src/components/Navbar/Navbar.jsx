@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div
       className="max-w-full fixed top-0 w-full h-min-content"
-      style={{ backgroundColor: "rgba(256,256,256,0.8)", zIndex: 100 }}
+      style={{ backgroundColor: "rgba(256,256,256,0.9)", zIndex: 100 }}
     >
       <header>
         <nav className="flex justify-between px-8 py-2 sm:p-3 items-center w-full">
@@ -41,6 +41,7 @@ function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  offset={-80}
                   className="font-bold text-gray_default hover:text-primary active:text-primary cursor-pointer"
                 >
                   {item}
@@ -80,6 +81,7 @@ function Navbar() {
                           spy={false}
                           smooth={true}
                           duration={1000}
+                          offset={-80}
                           className="font-bold text-white text-[14px] hover:text-primary active:text-gray_dark"
                         >
                           {item}
