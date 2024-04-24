@@ -6,10 +6,13 @@ function Footer() {
   return (
     <footer className="flex justify-center pt-10 sm:pt-20 pb-6 pr-6 pl-10 sm:px-16 bg-[#F1F8FF] mt-4 overflow-hidden">
       <div className="container mx-auto grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-12 text-black">
+        {/* Blog */}
+        {/* col-span-5 */}
+
         {/* Columna 1 */}
         <div className="relative flex flex-col col-span-5 justify-between gap-8 sm:col-span-2 pr-6 mb-10 sm:mb-0">
           <a href="/#">
-            <div className="flex items-center gap-3 pr-4">
+            <div className="flex items-center flex-col justify-center lg:flex-row gap-3 pr-4">
               <img
                 height={32}
                 width={32}
@@ -22,7 +25,7 @@ function Footer() {
             </div>
           </a>
           <p className="text-base">{data["section-footer"].paragraph}</p>
-          <div className="flex items-center gap-4 sm:mb-24">
+          <div className="flex items-center gap-2 xl:gap-8 2xl:gap-12 sm:mb-24">
             <img
               height={32}
               width={31}
@@ -40,10 +43,31 @@ function Footer() {
             <img
               height={32}
               width={31}
-              className="bg-white p-1 cursor-pointer rounded-md"
+              className="bg-white p-1 cursor-pointer rounded-md mr-2"
               src={data["section-footer"].links["linkedin-icon"]}
               alt={data["section-footer"].links["social-media-alt"]}
             />
+            <a href={data.bolg.url} Target="_blank" className="ml-auto">
+              <div
+                title={data.bolg.text}
+                className="text-center hover:text-primary cursor-pointer flex items-center gap-1 justify-center w-full"
+              >
+                <img
+                  width={32}
+                  height={32}
+                  src={data.bolg.icon}
+                  alt={`${data.bolg.title} icon`}
+                />
+                <div className="flex flex-col text-left justify-center">
+                  <p className="text-md md:text-lg font-bold">
+                    {data.bolg.title}
+                  </p>
+                  <h6 className="hidden lg:flex text-[12px] -mt-1 text-gray_default">
+                    {data.bolg.text}
+                  </h6>
+                </div>
+              </div>
+            </a>
           </div>
           <div className="absolute hidden sm:flex items-center gap-1 text-[12px] bottom-0">
             <p className="text-gray_light">

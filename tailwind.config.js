@@ -15,6 +15,10 @@ export default {
       fontFamily: {
         sans: ["Product Sans", "sans-serif"],
       },
+      screens: {
+        break1: "700px",
+        break2: "850px",
+      },
     },
   },
   plugins: [],
