@@ -13,24 +13,25 @@ function Navbar() {
   return (
     <div
       className="max-w-full fixed top-0 w-full h-min-content"
-      style={{ backgroundColor: "rgba(256,256,256,0.9)", zIndex: 100 }}
+      style={{ backgroundColor: "white", zIndex: 100 }}
     >
       <header>
         <nav className="flex justify-between px-8 py-2 sm:p-3 items-center w-full">
           <a href="/">
-            <div className="flex items-center gap-3 pr-4">
+            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex">
               <img
                 height={32}
                 width={32}
                 src={data["section-header"].logo}
                 alt={data["section-header"].alt}
+                className="sm:ml-4 xl:ml-0 break1:hidden break2:flex"
               />
-              <p className="text-primary font-normal text-[24px] mb-1 lg:text-[28px]">
+              <p className="sm:hidden xl:flex text-primary font-normal text-[24px] mb-1 lg:text-[28px]">
                 {data["section-header"].text_logo}
               </p>
             </div>
           </a>
-          <ul className="items-center justify-around hidden sm:flex md:gap-2 lg:gap-8 xl:gap-12">
+          <ul className="items-center sm:text-xs break2:text-base justify-around hidden sm:flex sm:-ml-5 md:gap-0 lg:gap-3 xl:gap-6 2xl:gap-12">
             {data["section-header"].navbar.map((item, index) => (
               <li
                 key={index}
@@ -49,17 +50,15 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="items-center text-lg hidden sm:flex gap-6 min-w-max-content px-4">
+          <div className="items-center text-[12px] break2:text-[1rem] hidden sm:flex -space-x-4 sm:pl-8 xl:space-x-6 min-w-max-content px-4">
             <a
               href="#"
-              className="font-bold text-gray_default hover:text-primary active:text-primary text-[14px] md:text-[16px] lg:text-[18px]"
+              className="font-bold text-gray_default hover:text-primary active:text-primary"
             >
               {data["section-header"].userLogin}
             </a>
-            <button className="font-semibold text-white bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class">
-              <p className="font-bold text-[14px] md:text-[16px] lg:text-[18px]">
-                {data["section-header"].userSignUp}
-              </p>
+            <button className="sm:bg-transparent sm:text-gray_default xl:text-white font-semibold text-white xl:bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class">
+              <p className="font-bold ">{data["section-header"].userSignUp}</p>
             </button>
           </div>
           <div className="sm:hidden">

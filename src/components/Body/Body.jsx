@@ -5,6 +5,7 @@ import TwoSection from "../Sections/TwoSection";
 import ThreeSection from "../Sections/ThreeSection";
 import FourSection from "../Sections/FourSection";
 import FiveSection from "../Sections/FiveSection";
+import Project from "../Sections/Project";
 
 function Body() {
   return (
@@ -20,6 +21,9 @@ function Body() {
       </section>
       <section id="lifestyle">
         <FourSection />
+      </section>
+      <section id="project">
+        <Project />
       </section>
       <section id="suscribe">
         <FiveSection />
