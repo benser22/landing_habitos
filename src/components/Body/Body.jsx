@@ -1,11 +1,11 @@
 // Body.js
-import React from "react";
-import OneSection from "../Sections/OneSection";
-import TwoSection from "../Sections/TwoSection";
-import ThreeSection from "../Sections/ThreeSection";
-import FourSection from "../Sections/FourSection";
-import FiveSection from "../Sections/FiveSection";
-import Project from "../Sections/Project";
+import React from 'react';
+import OneSection from '../Sections/OneSection';
+import TwoSection from '../Sections/TwoSection';
+import ThreeSection from '../Sections/ThreeSection';
+import FourSection from '../Sections/FourSection';
+import FiveSection from '../Sections/FiveSection';
+import Project from '../Sections/Project';
 
 function Body() {
   return (
@@ -16,7 +16,7 @@ function Body() {
       <section id="overview">
         <TwoSection />
       </section>
-      <section id="doctor's">
+      <section id="professionals">
         <ThreeSection />
       </section>
       <section id="lifestyle">
