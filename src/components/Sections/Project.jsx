@@ -13,12 +13,12 @@ function Project() {
         >
           {' '}
           <div className="relative w-full">
-            <p
+            {/* <p
               className="text-black absolute right-0 mt-4 text-5xl 2xl:flex px-8 font-bold"
               style={{ textShadow: '2px 1px 10px white' }}
             >
               PROJECT
-            </p>
+            </p> */}
             <img
               src={data.project.picture}
               alt={`${data.project.title} image`}
