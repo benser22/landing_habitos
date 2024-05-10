@@ -13,6 +13,12 @@ function Project() {
         >
           {' '}
           <div className="relative w-full">
+            <p
+              className="text-black absolute right-0 mt-4 text-5xl 2xl:flex px-8 font-bold"
+              style={{ textShadow: '2px 1px 10px white' }}
+            >
+              PROJECT
+            </p>
             <img
               src={data.project.picture}
               alt={`${data.project.title} image`}
@@ -29,21 +35,24 @@ function Project() {
                       filter: 'drop-shadow(1px 1px 2px gray)',
                     }}
                   />
-                  <p
+                  {/* <p
                     className="text-3xl hidden 2xl:flex px-8"
                     style={{ textShadow: '1px 1px 2px gray' }}
                   >
                     {data.project.text_logo}
-                  </p>
+                  </p> */}
                 </div>
                 <p
-                  className="text-xl sm:text-2xl md:text-4xl text-center"
+                  className="text-xl sm:text-2xl md:text-4xl text-center w-4/6"
                   style={{ textShadow: '1px 1px 2px gray' }}
                 >
                   {data.project.title}
                 </p>
               </div>
-              <p className="w-[90%] mx-auto text-gray_dark text-italic py-4 md:py-8 font-semibold text-center">
+              <p
+                className="w-[90%] mx-auto text-gray_dark text-italic py-4 md:py-8 font-semibold text-center"
+                style={{ textShadow: '1px 1px 2px white' }}
+              >
                 {data.project.paragraph}
               </p>
             </div>

@@ -8,8 +8,8 @@
       "Project",
       "Suscribe"
     ],
-    "userLogin": "Login",
-    "userSignUp": "Sign Up",
+    "blog": "Blog",
+    "contact": "Contact",
     "logo": "LogoColor.svg",
     "alt": "Landing logo",
     "text_logo": "FoodPawsNexus"
@@ -72,14 +72,15 @@
     "description2": "Our vision is to create a world where food is a bond between humans and pets, promoting healthy and sustainable eating habits for all. We aspire to be leaders in the human and pet food market, using technology and artificial intelligence to drive positive change in the industry."
   },
   "section-seven": {
-    "title": "Subscribe Newsletter",
+    "title": "Contact Us",
     "subtitle": "",
     "input_placeholder": "Enter your email",
-    "button": "Get Start",
+    "button": "Contact",
     "error": "Please enter a valid email address."
   },
   "section-footer": {
     "logo": "LogoColor.svg",
+    "logo-text": "LogoNegro.svg",
     "alt": "Landing logo",
     "text_logo": "FoodPawsNexus",
     "paragraph": "We believe that together we can build a future where food is a shared, healthy and enriching experience for everyone. Join us on this exciting journey to a world where people and their pets can enjoy healthier, happier lives together.",
@@ -100,7 +101,7 @@
       },
       "Contact": {
         "name": "Contact",
-        "data": ["+1826535375535", "+1843228662422", "call@medica.com"]
+        "data": ["+1826535375535", "+1843228662422", "call@foodpaws.com"]
       },
       "facebook-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/hjq0dwit3dofven8tuqv.png",
       "twitter-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/vmtv5mcgy42lqyohhoqd.png",
@@ -117,7 +118,7 @@
   },
   "project": {
     "picture": "project.jpg",
-    "title": "We are passionate about the idea of ​​uniting families with their pets through healthy and conscious eating.",
+    "title": "FoodPawsNexus: Platform For Eating Habits Of People And Pets",
     "paragraph": "At the heart of our project is Artificial Intelligence, a powerful tool that allows us to analyze data quickly and efficiently to offer an optimal experience to our users. We strive to create an agile and optimal platform that allows companies to better understand consumer trends and unify the feeding of people and pets.",
     "logo": "LogoNegro.svg",
     "alt": "project logo",
@@ -127,6 +128,6 @@
     "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713971967/new%20icons/f8hthk8boox5nag7odig.png",
     "title": "Blog",
     "text": "Visit our blog!",
-    "url": "https://www.blogger.com/about/?hl=es"
+    "url": "https://foodpawsnexus.blog.smartbiderdev.com/"
   }
 }

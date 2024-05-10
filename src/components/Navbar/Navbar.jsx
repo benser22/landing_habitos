@@ -10,6 +10,11 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleContactClick = () => {
+    const mailtoLink = `mailto:food_paw_nexus@gmail.com?subject=Contacto`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div
       className="max-w-full fixed top-0 w-full h-min-content"
@@ -52,13 +57,17 @@ function Navbar() {
           </ul>
           <div className="items-center text-[12px] break2:text-[1rem] hidden sm:flex -space-x-4 sm:pl-8 xl:space-x-6 min-w-max-content px-4">
             <a
-              href="#"
+              href={data.bolg.url}
+              target="_blank"
               className="font-bold text-gray_default hover:text-primary active:text-primary"
             >
-              {data['section-header'].userLogin}
+              {data['section-header'].blog}
             </a>
-            <button className="sm:bg-transparent sm:text-gray_default xl:text-white font-semibold text-white xl:bg-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class">
-              <p className="font-bold ">{data['section-header'].userSignUp}</p>
+            <button
+              onClick={handleContactClick}
+              className="sm:bg-transparent text-gray_default hover:text-primary active:text-primary py-2 px-6 md:py-3 md:px-9 cursor-pointer whitespace-nowrap button-class"
+            >
+              <p className="font-bold ">{data['section-header'].contact}</p>
             </button>
           </div>
           <div className="sm:hidden">
@@ -89,13 +98,17 @@ function Navbar() {
                     ))}
                     <div className="flex flex-col gap-4">
                       <a
-                        href="#"
-                        className="font-bold text-white hover:text-primary active:text-primary text-[14px] md:text-[16px] lg:text-[18px]"
+                        href={data.bolg.url}
+                        target="_blank"
+                        className="font-bold text-white text-[14px] hover:text-primary active:text-gray_dark"
                       >
-                        {data['section-header'].userLogin}
+                        {data['section-header'].blog}
                       </a>
-                      <a className="font-bold text-white text-[14px] mb-4 hover:text-primary active:text-gray_dark cursor-pointer">
-                        {data['section-header'].userSignUp}
+                      <a
+                        className="font-bold text-white text-[14px] pb-4 hover:text-primary active:text-gray_dark"
+                        onClick={handleContactClick}
+                      >
+                        {data['section-header'].contact}
                       </a>
                     </div>
                   </ul>
