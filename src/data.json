@@ -1,13 +1,6 @@
 {
   "section-header": {
-    "navbar": [
-      "Why us?",
-      "Overview",
-      "Professionals",
-      "Lifestyle",
-      "Project",
-      "Suscribe"
-    ],
+    "navbar": ["Why us?", "Overview", "Professionals", "Lifestyle", "Project"],
     "blog": "Blog",
     "contact": "Contact",
     "logo": "LogoColor.svg",
