@@ -5,10 +5,10 @@
     "contact": "Contact",
     "logo": "LogoColor.svg",
     "alt": "Landing logo",
-    "text_logo": "FoodPawsNexus"
+    "text_logo": "Nexusfood"
   },
   "section-one": {
-    "title": "FoodPawsNexus: Connecting the Eating Habits of People and Pets",
+    "title": "Nexusfood: Connecting the Eating Habits of People and Pets",
     "image": "perrohumano.jpg",
     "alt": "one section image"
   },
@@ -24,7 +24,7 @@
     "button": "Search"
   },
   "section-three": {
-    "title": "At FoodPawsNexus, we are on a unique mission...",
+    "title": "At Nexusfood, we are on a unique mission...",
     "subtitle": "to merge the worlds of human and animal food into one innovative platform. We specialize in designing and developing new technology that not only anticipates trends, but also detects changes in the eating habits of both people and pets.",
     "image1": "perroconservilleta.jpg",
     "alt1": "three section image 1",
@@ -34,7 +34,7 @@
     "alt3": "three section image 3"
   },
   "section-four": {
-    "title": "At FoodPawsNexus, we are committed to excellence and innovation. We believe that together we can build a future where food is a shared, healthy and enriching experience for everyone.",
+    "title": "At Nexusfood, we are committed to excellence and innovation. We believe that together we can build a future where food is a shared, healthy and enriching experience for everyone.",
     "subtitle": "Join us on this exciting journey to a world where people and their pets can enjoy healthier, happier lives together.",
     "image": "video.webp",
     "alt": "four section image",
@@ -58,7 +58,7 @@
     "alt2": "five section image2"
   },
   "section-six": {
-    "title": "At FoodPawsNexus, we are committed to excellence and innovation.",
+    "title": "At Nexusfood, we are committed to excellence and innovation.",
     "subtitle1": "Mission:",
     "subtitle2": "Vision:",
     "description1": "Our mission is to revolutionize the way people and their pets eat, offering a joint alternative that promotes the health and well-being of all. We strive to develop an agile and optimal platform that allows companies to better understand the needs of their customers and offer products and services adapted to their dietary requirements.",
@@ -75,7 +75,7 @@
     "logo": "LogoColor.svg",
     "logo-text": "LogoNegro.svg",
     "alt": "Landing logo",
-    "text_logo": "FoodPawsNexus",
+    "text_logo": "Nexusfood",
     "paragraph": "We believe that together we can build a future where food is a shared, healthy and enriching experience for everyone. Join us on this exciting journey to a world where people and their pets can enjoy healthier, happier lives together.",
     "links": {
       "Company": {
@@ -94,14 +94,14 @@
       },
       "Contact": {
         "name": "Contact",
-        "data": ["+1826535375535", "+1843228662422", "call@foodpaws.com"]
+        "data": ["+1826535375535", "+1843228662422", "call@nexusfood.com"]
       },
       "facebook-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/hjq0dwit3dofven8tuqv.png",
       "twitter-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/vmtv5mcgy42lqyohhoqd.png",
       "linkedin-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713318281/medical_landing/aaq0ffsigfezrku5k2gt.png",
       "social-media-alt": "social media image",
       "copy": "Copy right @2022",
-      "copy-name": "FoodPawsNexus",
+      "copy-name": "Nexusfood",
       "designBy": "Design by",
       "designBy-mame": "Sourav Aich"
     }
@@ -111,16 +111,16 @@
   },
   "project": {
     "picture": "project.jpg",
-    "title": "FoodPawsNexus: Platform For Eating Habits Of People And Pets",
+    "title": "Nexusfood: Platform For Eating Habits Of People And Pets",
     "paragraph": "At the heart of our project is Artificial Intelligence, a powerful tool that allows us to analyze data quickly and efficiently to offer an optimal experience to our users. We strive to create an agile and optimal platform that allows companies to better understand consumer trends and unify the feeding of people and pets.",
     "logo": "LogoNegro.svg",
     "alt": "project logo",
-    "text_logo": "FoodPawsNexus"
+    "text_logo": "Nexusfood"
   },
   "bolg": {
     "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713971967/new%20icons/f8hthk8boox5nag7odig.png",
     "title": "Blog",
     "text": "Visit our blog!",
-    "url": "https://foodpawsnexus.blog.smartbiderdev.com/"
+    "url": " https://nexusfood.blog.smartbiderdev.com"
   }
 }
