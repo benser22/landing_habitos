@@ -18,7 +18,7 @@ function FiveSection() {
 
   const handleButtonClick = () => {
     if (isValidEmail && email) {
-      window.location.href = `mailto:food_paw_nexus@gmail.com?subject=Consulta&body=Correo de contacto: ${email}`;
+      window.location.href = `mailto:call@nexusfood.com ?subject=Consulta&body=Correo de contacto: ${email}`;
     } else {
       alert(data['section-seven'].error);
     }

@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   const handleContactClick = () => {
-    const mailtoLink = `mailto:food_paw_nexus@gmail.com?subject=Contacto`;
+    const mailtoLink = `mailto:call@nexusfood.com?subject=Contacto`;
     window.location.href = mailtoLink;
   };
 
