@@ -10,8 +10,8 @@ function Footer() {
           <a href="/#" className="pb-4">
             <div className="flex items-center py-4 justify-center gap-3 pr-4 max-h-20 hover:animate-pulse">
               <img
-                height={150}
-                width={150}
+                height={200}
+                width={200}
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
                 className="sm:ml-4 xl:ml-0"
