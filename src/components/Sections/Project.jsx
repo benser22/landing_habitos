@@ -11,14 +11,7 @@ function Project() {
             backgroundPosition: 'center',
           }}
         >
-          {' '}
           <div className="relative w-full">
-            {/* <p
-              className="text-black absolute right-0 mt-4 text-5xl 2xl:flex px-8 font-bold"
-              style={{ textShadow: '2px 1px 10px white' }}
-            >
-              PROJECT
-            </p> */}
             <img
               src={data.project.picture}
               alt={`${data.project.title} image`}
@@ -26,7 +19,7 @@ function Project() {
             />
             <div className="w-full md:absolute bottom-0 left-0 md:bg-opacity-10 bg-[#D3E8FBB2] z-20 p-4">
               <div className="flex items-center justify-center sm:gap-6 text-primary font-bold text-center">
-                <div className="flex items-center">
+                <div className="flex items-center logo-project">
                   <img
                     src={data.project.logo}
                     alt={data.project.alt}
@@ -35,12 +28,6 @@ function Project() {
                       filter: 'drop-shadow(1px 1px 2px gray)',
                     }}
                   />
-                  {/* <p
-                    className="text-3xl hidden 2xl:flex px-8"
-                    style={{ textShadow: '1px 1px 2px gray' }}
-                  >
-                    {data.project.text_logo}
-                  </p> */}
                 </div>
                 <p
                   className="text-xl sm:text-2xl md:text-4xl text-center w-4/6"

@@ -5,22 +5,17 @@ function Footer() {
   return (
     <footer className="flex flex-col justify-center pt-10 sm:pt-20 pb-6 pr-6 pl-10 sm:px-16 bg-[#F1F8FF] mt-4 overflow-hidden">
       <div className="container mx-auto grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-12 text-black">
-        {/* Blog */}
-        {/* col-span-5 */}
-
         {/* Columna 1 */}
         <div className="relative flex flex-col col-span-5 justify-between sm:col-span-2 pr-6">
           <a href="/#" className="pb-4">
-            <div className="flex items-center py-4 justify-center gap-3 pr-4">
+            <div className="flex items-center py-4 justify-center gap-3 pr-4 max-h-20 hover:animate-pulse">
               <img
-                height={32}
-                width={32}
+                height={150}
+                width={150}
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
+                className="sm:ml-4 xl:ml-0"
               />
-              <p className="text-primary font-normal text-[20px] mb-1 lg:text-[28px]">
-                {data['section-header'].text_logo}
-              </p>
             </div>
             <p className="text-base">{data['section-footer'].paragraph}</p>
           </a>

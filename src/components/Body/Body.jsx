@@ -1,4 +1,3 @@
-// Body.js
 import OneSection from '../Sections/OneSection';
 import TwoSection from '../Sections/TwoSection';
 import ThreeSection from '../Sections/ThreeSection';

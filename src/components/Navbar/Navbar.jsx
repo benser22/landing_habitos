@@ -23,17 +23,23 @@ function Navbar() {
       <header>
         <nav className="flex justify-between px-8 py-2 sm:p-3 items-center w-full">
           <a href="/">
-            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex">
+            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex max-h-20 hover:animate-pulse">
               <img
-                height={32}
-                width={32}
+                height={150}
+                width={150}
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
-                className="sm:ml-4 xl:ml-0 break1:hidden break2:flex"
+                className="sm:ml-4 xl:ml-0"
               />
-              <p className="sm:hidden xl:flex text-primary font-normal text-[24px] mb-1 lg:text-[28px]">
-                {data['section-header'].text_logo}
-              </p>
+            </div>
+            <div className="hidden sm:flex md:hidden items-center gap-3 pr-4 max-h-20 hover:animate-pulse">
+              <img
+                height={80}
+                width={80}
+                src={data['section-header'].logo2}
+                alt={data['section-header'].alt2}
+                className="sm:ml-4 xl:ml-0"
+              />
             </div>
           </a>
           <ul className="items-center sm:text-xs break2:text-base justify-around hidden sm:flex sm:-ml-5 md:gap-0 lg:gap-3 xl:gap-6 2xl:gap-12">

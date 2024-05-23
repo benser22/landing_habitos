@@ -3,9 +3,10 @@
     "navbar": ["Why us?", "Overview", "Professionals", "Lifestyle", "Project"],
     "blog": "Blog",
     "contact": "Contact",
-    "logo": "LogoColor.svg",
+    "logo": "logos/4.png",
     "alt": "Landing logo",
-    "text_logo": "Nexusfood"
+    "logo2": "logos/1.png",
+    "alt2": "Landing logo"
   },
   "section-one": {
     "title": "Nexusfood: Connecting the Eating Habits of People and Pets",
@@ -72,10 +73,6 @@
     "error": "Please enter a valid email address."
   },
   "section-footer": {
-    "logo": "LogoColor.svg",
-    "logo-text": "LogoNegro.svg",
-    "alt": "Landing logo",
-    "text_logo": "Nexusfood",
     "paragraph": "We believe that together we can build a future where food is a shared, healthy and enriching experience for everyone. Join us on this exciting journey to a world where people and their pets can enjoy healthier, happier lives together.",
     "links": {
       "Company": {
@@ -113,9 +110,8 @@
     "picture": "project.jpg",
     "title": "Nexusfood: Platform For Eating Habits Of People And Pets",
     "paragraph": "At the heart of our project is Artificial Intelligence, a powerful tool that allows us to analyze data quickly and efficiently to offer an optimal experience to our users. We strive to create an agile and optimal platform that allows companies to better understand consumer trends and unify the feeding of people and pets.",
-    "logo": "LogoNegro.svg",
-    "alt": "project logo",
-    "text_logo": "Nexusfood"
+    "logo": "/logos/3.png",
+    "alt": "project logo"
   },
   "bolg": {
     "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1713971967/new%20icons/f8hthk8boox5nag7odig.png",
