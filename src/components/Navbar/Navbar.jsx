@@ -6,10 +6,6 @@ import { Link } from 'react-scroll';
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState({
-    logo: false,
-    logo2: false,
-  });
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,37 +18,18 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    const handleImageLoad = (image) => {
-      setImagesLoaded((prevImagesLoaded) => ({
-        ...prevImagesLoaded,
-        [image]: true,
-      }));
-    };
-
-    // Check if images are already loaded
-    const checkIfImageLoaded = (imageSrc, imageKey) => {
-      const img = new Image();
-      img.onload = () => handleImageLoad(imageKey);
-      img.src = imageSrc;
-    };
-
-    checkIfImageLoaded(data['section-header'].logo, 'logo');
-    checkIfImageLoaded(data['section-header'].logo2, 'logo2');
-  }, []);
-
-  const allImagesLoaded = imagesLoaded.logo && imagesLoaded.logo2;
 
   return (
     <div
@@ -73,12 +50,6 @@ function Navbar() {
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
                 className="sm:ml-4 xl:ml-0"
-                onLoad={() =>
-                  setImagesLoaded((prevImagesLoaded) => ({
-                    ...prevImagesLoaded,
-                    logo: true,
-                  }))
-                }
               />
             </div>
             <div className="hidden sm:flex md:hidden items-center gap-3 max-h-16 hover:animate-pulse min-w-max">
@@ -88,12 +59,6 @@ function Navbar() {
                 src={data['section-header'].logo2}
                 alt={data['section-header'].alt2}
                 className="sm:ml-4 xl:ml-0"
-                onLoad={() =>
-                  setImagesLoaded((prevImagesLoaded) => ({
-                    ...prevImagesLoaded,
-                    logo2: true,
-                  }))
-                }
               />
             </div>
           </a>

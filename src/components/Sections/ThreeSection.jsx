@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import data from '../../data.json';
 import { FaSpinner } from 'react-icons/fa';
 
