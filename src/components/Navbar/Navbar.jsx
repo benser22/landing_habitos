@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from '../../data.json';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link } from 'react-scroll';

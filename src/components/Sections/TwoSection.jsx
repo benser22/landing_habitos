@@ -1,4 +1,3 @@
-import React from 'react';
 import data from '../../data.json';
 import { IoPlaySharp } from 'react-icons/io5';
 
