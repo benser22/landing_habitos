@@ -1,4 +1,3 @@
-import React from 'react';
 import data from '../../data.json';
 import { Link } from 'react-scroll';
 
@@ -6,32 +5,20 @@ function Footer() {
   return (
     <footer className="flex flex-col justify-center pt-10 sm:pt-20 pb-6 pr-6 pl-10 sm:px-16 bg-[#F1F8FF] mt-4 overflow-hidden">
       <div className="container mx-auto grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-12 text-black">
-        {/* Blog */}
-        {/* col-span-5 */}
-
         {/* Columna 1 */}
         <div className="relative flex flex-col col-span-5 justify-between sm:col-span-2 pr-6">
           <a href="/#" className="pb-4">
-            <div className="flex items-center py-4 justify-center gap-3 pr-4">
+            <div className="flex items-center py-4 justify-center gap-3 pr-4 max-h-20 hover:animate-pulse">
               <img
-                height={32}
-                width={32}
+                height={150}
+                width={150}
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
+                className="sm:ml-4 xl:ml-0"
               />
-              <p className="text-primary font-normal text-[20px] mb-1 lg:text-[28px]">
-                {data['section-header'].text_logo}
-              </p>
             </div>
             <p className="text-base">{data['section-footer'].paragraph}</p>
           </a>
-
-          {/* <div className="absolute hidden sm:flex items-center gap-1 text-[12px] bottom-0">
-            <p className="text-gray_light">
-              {data['section-footer'].links.copy}
-            </p>
-            <p>{data['section-footer'].links['copy-name']}</p>
-          </div> */}
         </div>
         {/* Columna 2 */}
         <div className="col-span-1">
@@ -40,7 +27,7 @@ function Footer() {
           </h2>
           <div className="mt-2">
             {data['section-footer'].links.Company.data.map((item, index) => (
-              <a key={index}>
+              <div key={index}>
                 <Link
                   to={item.toLowerCase().replace(/\s+/g, '')}
                   spy={true}
@@ -52,7 +39,7 @@ function Footer() {
                     {item}
                   </p>
                 </Link>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -86,7 +73,7 @@ function Footer() {
             ))}
           </div>
 
-          <a href={data.bolg.url} Target="_blank" className="ml-auto">
+          <a href={data.bolg.url} target="_blank" className="ml-auto">
             <div
               title={data.bolg.text}
               className="text-center hover:text-primary cursor-pointer mt-4 flex items-start gap-1 justify-center sm:justify-start w-full"
