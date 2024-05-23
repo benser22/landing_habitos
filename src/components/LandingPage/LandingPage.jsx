@@ -2,10 +2,9 @@ import React, { Suspense } from 'react';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
+import Body from '../Body/Body';
 import Layout from '../Layout/Layout';
 import Footer from '../Footer/Footer';
-
-const LazyBody = React.lazy(() => import('../Body/Body'));
 
 function LoadingSpinner() {
   return (
@@ -25,9 +24,7 @@ function LandingPage() {
         <section id="whyus?">
           <Hero />
         </section>
-        <Suspense fallback={<LoadingSpinner />}>
-          <LazyBody />
-        </Suspense>
+        <Body />
       </Layout>
       <Footer />
     </div>

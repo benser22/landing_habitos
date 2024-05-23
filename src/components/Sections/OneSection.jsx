@@ -64,7 +64,7 @@ function OneSection() {
                     color: word === 'mission...' ? '#2B88D9' : 'inherit',
                   }}
                 >
-                  {word}{' '}
+                  {word}
                 </span>
               ))}
             </h2>
