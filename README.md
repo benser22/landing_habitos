@@ -10,20 +10,20 @@ El archivo JSON define la estructura de las secciones del proyecto y cómo se re
 
 - **Header** 🖋️:
 
-  - "section-header": Renderizado por Navbar.
+  - **"section-header"**: Consumido por Navbar.
 
 - **Body** 💼:
 
-  - "section-one" y "section-two": Renderizados por Hero.
-  - "section-three": Renderizado por OneSection.
-  - "section-four": Renderizado por TwoSection.
-  - "section-five": Renderizado por ThreeSection.
-  - "section-six": Renderizado por FourSection.
-  - "section-seven": Renderizado por FiveSection.
+  - **"section-one"** y **"section-two"**: Consumidos por Hero.
+  - **"section-three"**: Consumido por OneSection.
+  - **"section-four"**: Consumido por TwoSection.
+  - **"section-five"**: Consumido por ThreeSection.
+  - **"section-six"**: Consumido por FourSection.
+  - **"section-seven"**: Consumido por FiveSection.
 
 - **Footer** 🦶:
 
-  - "section-footer": Renderizado por Footer.
+  - **"section-footer"**: Consumido por Footer.
 
 ## Estilos y Renderizado
 
