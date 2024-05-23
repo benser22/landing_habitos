@@ -18,7 +18,8 @@ function FiveSection() {
 
   const handleButtonClick = () => {
     if (isValidEmail && email) {
-      window.location.href = `mailto:call@nexusfood.com ?subject=Consulta&body=Correo de contacto: ${email}`;
+      window.location.href = `mailto:call@nexusfood.com ?subject=Contact&body=Email contact: ${email}`;
+      setEmail('');
     } else {
       alert(data['section-seven'].error);
     }
@@ -29,9 +30,6 @@ function FiveSection() {
       <p className="text-md sm:text-xl md:text-2xl lg:text-3xl font-semibold">
         {data['section-seven'].title}
       </p>
-      {/* <p className="text-xs sm:text-md md:text-xl lg:text-2xl text-gray_light">
-        {data["section-seven"].subtitle}
-      </p> */}
       <div className="flex flex-col sm:flex-row items-center mt-4 gap-2 sm:gap-4 ">
         <input
           type="email"
