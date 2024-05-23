@@ -1,11 +1,11 @@
-import React, { Suspense } from "react";
-import { HiOutlineRefresh } from "react-icons/hi";
-import Navbar from "../Navbar/Navbar";
-import Hero from "../Hero/Hero";
-import Layout from "../Layout/Layout";
-import Footer from "../Footer/Footer";
+import React, { Suspense } from 'react';
+import { HiOutlineRefresh } from 'react-icons/hi';
+import Navbar from '../Navbar/Navbar';
+import Hero from '../Hero/Hero';
+import Layout from '../Layout/Layout';
+import Footer from '../Footer/Footer';
 
-const LazyBody = React.lazy(() => import("../Body/Body"));
+const LazyBody = React.lazy(() => import('../Body/Body'));
 
 function LoadingSpinner() {
   return (

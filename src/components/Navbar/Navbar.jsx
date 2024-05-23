@@ -6,6 +6,10 @@ import { Link } from 'react-scroll';
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState({
+    logo: false,
+    logo2: false,
+  });
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,18 +22,37 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const handleImageLoad = (image) => {
+      setImagesLoaded((prevImagesLoaded) => ({
+        ...prevImagesLoaded,
+        [image]: true,
+      }));
+    };
+
+    // Check if images are already loaded
+    const checkIfImageLoaded = (imageSrc, imageKey) => {
+      const img = new Image();
+      img.onload = () => handleImageLoad(imageKey);
+      img.src = imageSrc;
+    };
+
+    checkIfImageLoaded(data['section-header'].logo, 'logo');
+    checkIfImageLoaded(data['section-header'].logo2, 'logo2');
+  }, []);
+
+  const allImagesLoaded = imagesLoaded.logo && imagesLoaded.logo2;
 
   return (
     <div
@@ -46,11 +69,16 @@ function Navbar() {
           <a href="/">
             <div className="flex items-center pr-4 sm:hidden md:flex max-h-16 hover:animate-pulse min-w-max">
               <img
-                height={150}
                 width={150}
                 src={data['section-header'].logo}
                 alt={data['section-header'].alt}
                 className="sm:ml-4 xl:ml-0"
+                onLoad={() =>
+                  setImagesLoaded((prevImagesLoaded) => ({
+                    ...prevImagesLoaded,
+                    logo: true,
+                  }))
+                }
               />
             </div>
             <div className="hidden sm:flex md:hidden items-center gap-3 max-h-16 hover:animate-pulse min-w-max">
@@ -60,6 +88,12 @@ function Navbar() {
                 src={data['section-header'].logo2}
                 alt={data['section-header'].alt2}
                 className="sm:ml-4 xl:ml-0"
+                onLoad={() =>
+                  setImagesLoaded((prevImagesLoaded) => ({
+                    ...prevImagesLoaded,
+                    logo2: true,
+                  }))
+                }
               />
             </div>
           </a>
@@ -84,7 +118,7 @@ function Navbar() {
           </ul>
           <div className="items-center text-[12px] break2:text-[1rem] hidden sm:flex -space-x-4 sm:pl-8 xl:space-x-6 min-w-max-content px-4">
             <a
-              href={data.bolg.url}
+              href={data.blog.url}
               target="_blank"
               className="font-bold text-gray_default hover:text-primary active:text-primary"
             >
@@ -125,7 +159,7 @@ function Navbar() {
                     ))}
                     <div className="flex flex-col gap-4">
                       <a
-                        href={data.bolg.url}
+                        href={data.blog.url}
                         target="_blank"
                         className="font-bold text-white text-[14px] hover:text-primary active:text-gray_dark"
                       >

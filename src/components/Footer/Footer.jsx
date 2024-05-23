@@ -73,23 +73,23 @@ function Footer() {
             ))}
           </div>
 
-          <a href={data.bolg.url} target="_blank" className="ml-auto">
+          <a href={data.blog.url} target="_blank" className="ml-auto">
             <div
-              title={data.bolg.text}
+              title={data.blog.text}
               className="text-center hover:text-primary cursor-pointer mt-4 flex items-start gap-1 justify-center sm:justify-start w-full"
             >
               <img
                 width={32}
                 height={32}
-                src={data.bolg.icon}
-                alt={`${data.bolg.title} icon`}
+                src={data.blog.icon}
+                alt={`${data.blog.title} icon`}
               />
               <div className="flex flex-col text-left">
                 <p className="text-md md:text-lg font-bold">
-                  {data.bolg.title}
+                  {data.blog.title}
                 </p>
                 <h6 className="hidden lg:flex text-[12px] -mt-1 text-gray_default">
-                  {data.bolg.text}
+                  {data.blog.text}
                 </h6>
               </div>
             </div>
