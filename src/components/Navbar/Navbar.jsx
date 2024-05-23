@@ -23,7 +23,7 @@ function Navbar() {
       <header>
         <nav className="flex justify-between px-8 py-2 sm:p-3 items-center w-full">
           <a href="/">
-            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex max-h-20 hover:animate-pulse">
+            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex max-h-16 hover:animate-pulse">
               <img
                 height={150}
                 width={150}
@@ -32,7 +32,7 @@ function Navbar() {
                 className="sm:ml-4 xl:ml-0"
               />
             </div>
-            <div className="hidden sm:flex md:hidden items-center gap-3 pr-4 max-h-20 hover:animate-pulse">
+            <div className="hidden sm:flex md:hidden items-center gap-3 pr-4 max-h-16 hover:animate-pulse">
               <img
                 height={80}
                 width={80}
