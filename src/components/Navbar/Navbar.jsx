@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import data from '../../data.json';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,15 +16,35 @@ function Navbar() {
     window.location.href = mailtoLink;
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div
-      className="max-w-full fixed top-0 w-full h-min-content"
-      style={{ backgroundColor: 'white', zIndex: 99999 }}
+      className={`max-w-full bg-white fixed top-0 w-full h-min-content ${
+        isScrolled ? 'bg-opacity-90' : 'bg-opacity-100'
+      }`}
+      style={{
+        zIndex: 99999,
+        transition: 'background-color 0.3s',
+      }}
     >
       <header>
-        <nav className="flex justify-between px-8 py-2 sm:p-3 items-center w-full">
+        <nav className="flex justify-between px-6 xl:px-12 py-2 sm:p-3 items-center w-full">
           <a href="/">
-            <div className="flex items-center gap-3 pr-4 sm:hidden md:flex max-h-16 hover:animate-pulse">
+            <div className="flex items-center pr-4 sm:hidden md:flex max-h-16 hover:animate-pulse min-w-max">
               <img
                 height={150}
                 width={150}
@@ -32,7 +53,7 @@ function Navbar() {
                 className="sm:ml-4 xl:ml-0"
               />
             </div>
-            <div className="hidden sm:flex md:hidden items-center gap-3 pr-4 max-h-16 hover:animate-pulse">
+            <div className="hidden sm:flex md:hidden items-center gap-3 max-h-16 hover:animate-pulse min-w-max">
               <img
                 height={80}
                 width={80}
