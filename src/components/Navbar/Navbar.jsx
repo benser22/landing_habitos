@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from '../../data.json';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link } from 'react-scroll';
@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   const handleContactClick = () => {
-    const mailtoLink = `mailto:call@nexusfood.com?subject=Contacto`;
+    const mailtoLink = `mailto:call@nexusfood.com?subject=Contact`;
     window.location.href = mailtoLink;
   };
 

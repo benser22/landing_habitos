@@ -1,4 +1,3 @@
-import React from 'react';
 import data from '../../data.json';
 import { Link } from 'react-scroll';
 
@@ -25,13 +24,6 @@ function Footer() {
             </div>
             <p className="text-base">{data['section-footer'].paragraph}</p>
           </a>
-
-          {/* <div className="absolute hidden sm:flex items-center gap-1 text-[12px] bottom-0">
-            <p className="text-gray_light">
-              {data['section-footer'].links.copy}
-            </p>
-            <p>{data['section-footer'].links['copy-name']}</p>
-          </div> */}
         </div>
         {/* Columna 2 */}
         <div className="col-span-1">
@@ -40,7 +32,7 @@ function Footer() {
           </h2>
           <div className="mt-2">
             {data['section-footer'].links.Company.data.map((item, index) => (
-              <a key={index}>
+              <div key={index}>
                 <Link
                   to={item.toLowerCase().replace(/\s+/g, '')}
                   spy={true}
@@ -52,7 +44,7 @@ function Footer() {
                     {item}
                   </p>
                 </Link>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -86,7 +78,7 @@ function Footer() {
             ))}
           </div>
 
-          <a href={data.bolg.url} Target="_blank" className="ml-auto">
+          <a href={data.bolg.url} target="_blank" className="ml-auto">
             <div
               title={data.bolg.text}
               className="text-center hover:text-primary cursor-pointer mt-4 flex items-start gap-1 justify-center sm:justify-start w-full"
